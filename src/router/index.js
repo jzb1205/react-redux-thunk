@@ -1,30 +1,17 @@
 
-import Login from './../view/login.jsx';
-import Admin from './../view/admin.jsx'
-import Test from './../view/test.jsx'
-import Course from './../view/course'
+import Parent from '../view/parent.jsx'
+import Children from '../view/children.jsx'
 
 const routes = [
     {
-        path: '/',
-        component: Login,
-        exact: true,
-    },
-    {
-        path: '/test',
-        component: Test,
-        children: [
-            {
-                path: '/test/course',
-                component: Course
-            }
-        ]
+        path: '/parent',
+        component: Parent
     },
     
     {
-        path: '/admin',
-        component: Admin
-    },
+        path: '/children',
+        component: Children
+    }
 ];
  
 export {routes}

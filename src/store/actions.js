@@ -17,13 +17,6 @@ export function setInfoList (data) {
       }).then(res => {
           return res.json()
       }).then(data => {
-        //   let { code, data } = data
-        //   if (code === 0) {
-        //       dispatch({ type: SET_INFO_LIST, data: data })
-        //   }
-          // 请求结束可以dispatch一个加载结束状态
-          // 例如 dispatch({ type: SET_LOADING_TYPE, data: "loaded" })
-          // 还可以区分一下成功或者失败
       })
     }
   }
